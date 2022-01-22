@@ -1,0 +1,63 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #47798c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    display: block;
+    margin: 0 10px;
+    padding: 6px;
+    border-radius: 4px;
+    background: #fff078;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: orange;
+}
+
+h2 {
+    text-align: center;
+}
+
+#juego {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #225564;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.puntos {
+    text-align: center;
+    font-weight: bold;
+    background: rgba(0,0,0,.2);
+    padding: 6px;
+}
+
+#puntaje {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #d3a9ab;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+#puntaje:empty {
+    display: none;
+}
